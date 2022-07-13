@@ -1,6 +1,4 @@
-package com.codreview;
-
-import com.codreview.task1.IPFileReader;
+package com.yourcodereview.turebekov;
 
 import java.io.IOException;
 import java.nio.file.Path;

@@ -1,10 +1,11 @@
-package com.codreview.task1;
+package com.yourcodereview.turebekov;
 
 import java.util.BitSet;
 
-public final class BitManipulation {
-    private final BitSet bitSetPositiveInt = new BitSet(2_147_000_000);
-    private final BitSet bitSetNegativeInt = new BitSet(2_147_000_000);
+public class BitManipulation {
+    //Max IP number in IPv4 is 4_294_967_296 (2^32)
+    private final BitSet bitSetPositiveInt = new BitSet(Integer.MAX_VALUE);
+    private final BitSet bitSetNegativeInt = new BitSet(Integer.MAX_VALUE);
 
     public void setBits(String line) {
         if (line.isEmpty())

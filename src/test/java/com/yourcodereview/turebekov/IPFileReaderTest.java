@@ -1,4 +1,4 @@
-package com.codreview.task1;
+package com.yourcodereview.turebekov;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,11 +8,10 @@ import java.nio.file.AccessDeniedException;
 import java.nio.file.Path;
 
 class IPFileReaderTest {
-
     @Test
     public void IllegalArgumentExceptionWhenPathIsNull() {
         IllegalArgumentException exception = Assertions.assertThrows(IllegalArgumentException.class, () ->
-            IPFileReader.readFile(null, null));
+                IPFileReader.readFile(null, null));
 
         Assertions.assertEquals("Path cannot be null", exception.getMessage());
     }
@@ -20,7 +19,7 @@ class IPFileReaderTest {
     @Test
     public void AccessDeniedException() {
         AccessDeniedException exception = Assertions.assertThrows(AccessDeniedException.class, () ->
-            IPFileReader.readFile(Path.of("null"), null));
+                IPFileReader.readFile(Path.of("null"), null));
 
         Assertions.assertEquals("File access denied", exception.getMessage());
     }
@@ -30,6 +29,7 @@ class IPFileReaderTest {
         Path path = Path.of("src/main/resources/ip_adresses");
 
         var result = IPFileReader.readFile(path, null);
-        Assertions.assertEquals(5,result);
+        Assertions.assertEquals(5, result);
     }
+
 }

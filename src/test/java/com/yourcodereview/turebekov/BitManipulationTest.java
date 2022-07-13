@@ -1,4 +1,4 @@
-package com.codreview.task1;
+package com.yourcodereview.turebekov;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -64,18 +64,19 @@ class BitManipulationTest {
     public void containsFiveUniqueIPs() {
         for (String ip : listWithFiveUIP)
             manipulation.setBits(ip);
-        Assertions.assertEquals(5,manipulation.getUniqueIp());
+        Assertions.assertEquals(5, manipulation.getUniqueIp());
     }
 
     @Test
     public void containsTwoUniqueIPs() {
         for (String ip : listWithTwoUIP)
             manipulation.setBits(ip);
-        Assertions.assertEquals(2,manipulation.getUniqueIp());
+        Assertions.assertEquals(2, manipulation.getUniqueIp());
     }
 
     @Test
     public void notExistUniqueIPs() {
-        Assertions.assertEquals(0,manipulation.getUniqueIp());
+        Assertions.assertEquals(0, manipulation.getUniqueIp());
     }
+
 }

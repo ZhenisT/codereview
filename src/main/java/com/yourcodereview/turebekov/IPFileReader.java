@@ -1,4 +1,4 @@
-package com.codreview.task1;
+package com.yourcodereview.turebekov;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

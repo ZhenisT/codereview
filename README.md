@@ -1,6 +1,6 @@
 # codereview
 Задача: поиск уникальных IP адресов из файла с неограниченным размером.
-Задача реализует класс IPFileReader предоставляющий метод read и возвращает количество уникальных записей.
+Задача реализует класс com.yourcodereview.turebekov.IPFileReader предоставляющий метод read и возвращает количество уникальных записей.
 public long read(String file, AVLTree tree) {
 try (FileReader fileReader = new FileReader(file);
 BufferedReader reader = new BufferedReader(fileReader)) {
